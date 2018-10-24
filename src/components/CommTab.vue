@@ -5,8 +5,8 @@
         <tab-item class="vux-center" :selected="tabselected===index" v-for="(item, index) in titles" :key="index">{{item.title}}</tab-item>
       </tab>
       <swiper v-model="index" height="100px" :show-dots="false">
-        <swiper-item v-for="(item, index) in titles" :key="index">
-          <div class="tab-swiper vux-center">{{item.title}} Container</div>
+        <swiper-item v-for="(item, index) in list+'titles[index]'" :key="index">
+          <div class="tab-swiper vux-center">{{item}} Container</div>
         </swiper-item>
       </swiper>
   </div>
@@ -30,13 +30,15 @@ export default {
               {title:"出租寻租",name:"chuzu"},       
               {title:"求职招聘",name:"qiuzhi"},       
               {title:"跳蚤市场",name:"shichang"},       
+              {title:"跳蚤市场",name:"shichang"},       
+              {title:"跳蚤市场",name:"shichang"},       
               {title:"杂七杂八",name:"other"},       
         ] 
         }
   },
     watch:{
       list:function(){
-        console.log(this.list)
+      
        
       }
     },
@@ -45,7 +47,7 @@ export default {
       // changed:(index)=>{   tabselected = index  }
     },
     created(){
-        var _this=this
+         var _this=this
         axios.get("/static/test.json").then(function(res){
              _this.list = res.data.data.community;
              console.log(_this.list)
