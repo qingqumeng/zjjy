@@ -4,14 +4,17 @@
       <grid-item v-for="i in 5" :key="i">
         <span class="grid-center">{{i}}</span>
       </grid-item>
-    </grid></div>
+    </grid>
+   <CommTab></CommTab>
+  </div>
 </template>
 
 <script>
 import { Grid, GridItem, GroupTitle } from 'vux'
+import CommTab from '@/components/CommTab'
 export default {
     name:'',
-    components:{Grid, GridItem, GroupTitle},
+    components:{Grid, GridItem, GroupTitle,CommTab},
     props:{},
     data(){
       return {

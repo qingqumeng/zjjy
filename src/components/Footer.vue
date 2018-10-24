@@ -7,7 +7,7 @@
        <svg slot="icon-active" class="icon" aria-hidden="true">
         <use xlink:href="#icon-home"></use>
       </svg>    
-        <span slot="label">综合</span>
+        <span slot="label">首页</span>
       </tabbar-item>
       <tabbar-item :link="{path:'/Community'}" >
         <svg slot="icon" class="icon" aria-hidden="true">
@@ -16,7 +16,7 @@
         <svg slot="icon-active" class="icon" aria-hidden="true">
           <use xlink:href="#icon-list-active"></use>
         </svg> 
-        <span slot="label">动弹</span>
+        <span slot="label">社区</span>
       </tabbar-item>
       <!-- <tabbar-item :link="{path:'/'}" >
         <img style="height:40px;width:40px;" slot="icon" src="../assets/image/ic_nav_add_normal.png">

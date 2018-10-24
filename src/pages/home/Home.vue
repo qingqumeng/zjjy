@@ -1,17 +1,17 @@
 <template>
   <div class="wrapper">
-      <x-header title="use prop:title"></x-header> 
-      <svg  class="icon" aria-hidden="true">
-        <use xlink:href="#icon-home"></use>
-      </svg>
+    <x-header title="use prop:title"></x-header> 
+    <home-swiper></home-swiper>
   </div>
 </template>
 
 <script>
+import HomeSwiper from './component/HomeSwiper'
 import { XHeader, Actionsheet, TransferDom, ButtonTab, ButtonTabItem } from 'vux'
 export default {
     name:'',
     components:{
+    HomeSwiper,
     XHeader,
     Actionsheet,
     ButtonTab,
