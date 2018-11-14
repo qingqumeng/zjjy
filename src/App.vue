@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <Footer></Footer>
+    <router-view class="routerview"></router-view>
+    <Footer style="position:fixed"></Footer>
   </div>
 </template>
 
@@ -22,4 +22,8 @@ export default {
     fill: currentColor;
     overflow: hidden;
  }
+ .routerview{
+   margin-bottom:50px; 
+ }
+
 </style>

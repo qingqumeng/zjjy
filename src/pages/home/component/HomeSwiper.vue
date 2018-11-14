@@ -2,9 +2,7 @@
   <div class="wrapper">
     <swiper :list="imgList" auto style="margin:0 auto;" height="180px" dots-class="" dots-position="right"></swiper>
     <swiper auto height="30px" direction="vertical" :interval=2000 class="text-scroll" :show-dots="false">
-
-      <swiper-item v-for="(item, index) in textList" :key="index"><p>{{item.title}}</p></swiper-item>
-  
+      <swiper-item v-for="(item, index) in textList" :key="index"><p>{{item.title}}</p></swiper-item>  
     </swiper>
   </div>
 </template>
@@ -32,13 +30,13 @@ export default {
             url: 'javascript:',
             img: 'https://static.vux.li/demo/5.jpg', // 404
             title: '送你一次旅行',
-            fallbackImg: 'https://ww1.sinaimg.cn/large/663d3650gy1fq66vw50iwj20ff0aaaci.jpg'
+            fallbackImg: '../static/img/bj.jpg'
             }, 
             {
             url: 'javascript:',
             img: '../static/img/download.jpg', // 404
             title: 'a nice watch',
-            fallbackImg: 'https://ww1.sinaimg.cn/large/663d3650gy1fq66vw50iwj20ff0aaaci.jpg'
+            fallbackImg: '../static/img/bj.jpg'
             }
         ] ,
         textList:[
